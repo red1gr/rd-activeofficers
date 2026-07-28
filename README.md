@@ -4,7 +4,7 @@
 
 ## OVERVIEW
 rd-activeofficers is a police management utility for QBCore servers that allows law enforcement personnel to track active officers through an integrated tablet interface. It provides real-time visibility into officer duty status, ranks, and radio channels, while allowing individuals to manage their own callsigns and availability status.
-
+[![Preview](https://i.imgur.com/T6NNkOO.png)](https://imgur.com/T6NNkOO)
 ## FEATURES
 - **Active Personnel Tracking:** View a real-time, sorted list of on-duty police officers including their name, badge number, rank, and current radio frequency.
 - **Callsign Management:** Set and update personal police callsigns via a dedicated in-game command and input dialog.
