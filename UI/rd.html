@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RED1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='rd.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+</head>
+
+<body>
+    <div id="background-overlay"></div>
+    <div id="tablet" class="tablet-container">
+        <div class="tablet-content">
+            <div class="menu">
+                <ul>
+                    <li class="profile">
+                        <div class="img-box">
+                            <img src="./UI/img/logo.png">
+                        </div>
+                        <h2>RD</h2>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <p>OFFICERS</p>
+                        </a>
+                    </li>
+                    <li class="close">
+                        <a href="#" onclick="closeTablet()">
+                            <i class="fas fa-sign-out"></i>
+                            <p>CLOSE</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="title-info">
+                    <p>RD ACTIVE OFFICERS</p>
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="data-info" id="officerList"></div>
+            </div>
+        </div>
+    </div>
+    <script src='rd.js'></script>
+</body>
+
+</html>

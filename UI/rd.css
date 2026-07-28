@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden; 
+  cursor: none; 
+  background-color: transparent; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70vh;
+}
+
+#background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  display: none;
+  z-index: 999; 
+}
+
+#tablet {
+  position: relative;
+  width: 600px; 
+  height: 500px; 
+  display: none;
+  z-index: 1000;
+}
+
+.tablet-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: transparent; 
+}
+
+.menu {
+  background-color: rgb(6, 6, 59);
+  width: 50px; 
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+  margin-left: 60px;
+  transition: .5s;
+  border-radius: 15px;
+}
+
+.menu:hover {
+  width: 500px;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  padding: -150px;
+}
+
+.img-box img {
+  width: 90%;
+  padding: -150px;
+  margin: -2px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile h2 {
+  font-size: 16px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+ul li a:hover, .active {
+  background-color: rgba(57, 57, 135, 0.315);
+}
+
+.close {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.close a {
+  background-color: rgb(89, 19, 19);
+}
+
+.close a:hover, .active {
+  background-color: rgba(233, 13, 39, 0.868);
+}
+
+ul li a i {
+  font-size: 16px;
+  padding: 0px;
+}
+
+ul li a p {
+  overflow: hidden;
+}
+
+.content {
+  width: calc(100% - 60px); 
+  margin: 10px;
+  height: 98%;
+  background-color: rgba(0, 0, 0, 0.567);
+  border-radius: 8px; 
+  padding: 10px;
+}
+
+.title-info {
+  background-color: rgb(170, 116, 8);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+  color: white;
+}
+
+.data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 300px; 
+  overflow-y: auto;
+}
+
+.data-info .box {
+  background-color: rgba(12, 7, 7, 0.541);
+  height: 20px; 
+  flex-basis: 120px; 
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  font-size: 10px;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.data-info .box p {
+  margin: 0; 
+  font-size: 12px;
+  text-transform: uppercase; 
+}
+.box {
+  cursor: pointer;
+}
+.box:hover {
+  background-color: rgba(57, 57, 135, 0.5);
+}
